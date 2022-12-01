@@ -1,3 +1,5 @@
+.container--flex { display: flex;}
+
 .offer {margin-top: 30px;}
 
 .offer__content
@@ -103,6 +105,8 @@
 
 .offer__discount
 {
+	max-width: 360px;
+	width: 100%;
 	margin-right: 0;
 	background-color: #FFD8EF;
 }
@@ -110,4 +114,126 @@
 .offer__promotion-text--blue 
 {
 	p { color: rgba(28, 41, 77, 0.8);}
+}
+
+.offer__aside
+{
+	max-width: 360px;
+	width: 100%;
+	background: #FFFFFF;
+	border-radius: 5px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img 
+	{
+		max-width: 167px;
+		width: 100%;
+	}
+}
+
+.offer__aside-daybook
+{
+	margin-top: 22px;
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	p 
+	{
+		margin: 0;	
+		margin-left: 20px;
+		font-size: 16px;
+		text-align: center;
+		color: #1C294D;
+		font-weight: 600;
+	}
+}
+
+.offer_aside-daybook-time
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 68px;
+	height: 25px;
+	background: rgba(255, 122, 0, 0.15);
+	border-radius: 5px;
+	font-size: 12px;
+	text-align: center;
+	color: #FF7A00;
+	margin-right: 20px;
+}
+
+.offer__aside-desc
+{
+	max-width: 320px;
+	width: 100%;
+	
+}
+
+.offer__aside-desc-item
+{
+	margin: 0;
+	margin-bottom: 8px;
+	&:first-child
+	{
+		font-size: 12px;
+		color: rgba(28, 41, 77, 0.5);
+		margin-top: 15px;
+	}
+	&:nth-child(2)
+	{
+		font-size: 14px;
+		font-weight: bold;
+		color: rgba(28, 41, 77, 1);
+		line-height: 19px;
+	}
+	&:nth-child(3)
+	{
+		font-size: 12px;
+		color: rgba(28, 41, 77, 1);
+	}
+	&:last-child
+	{
+		font-weight: 700;
+		font-size: 18px;
+		color: #1C294D;
+		margin-bottom: 10px;
+	}
+}
+
+.offer__aside-actions
+{
+	width: 100%;
+	display: flex;
+}
+
+.g-button-cart
+{
+	width: 146px;
+	border-radius: 5px;
+	height: 40px;
+	margin-left: 20px;
+	// margin-bottom: 26px;
+	border: 1px solid #EEEEEE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	svg {margin-right: 12px;}
+}
+
+.g-button-tabs
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	// margin-bottom: 26px;
+	border: 1px solid #EEEEEE;
 }

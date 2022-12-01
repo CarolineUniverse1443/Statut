@@ -1,6 +1,6 @@
 {% block offer %}
 	<section class="offer">
-		<div class="container">
+		<div class="container container--flex">
 			<div class="offer__content">
 				<div class="offer__slider">
 					<div class="offer__slider-arrow">
@@ -40,6 +40,28 @@
 					<div class="offer__promotion-svg">
 						{% include '/assets/svg/discount-reg.svg' %}
 					</div>
+				</div>
+			</div>
+			<div class="offer__aside">
+				<div class="offer__aside-daybook">
+					<p>Книга дня</p>
+					<div class="offer_aside-daybook-time">08:56:31</div>
+				</div>
+				<img src="img/daybook.png" alt="book of the day" class="">
+				<div class="offer__aside-desc">
+					<p class="offer__aside-desc-item">Корпоративное право</p>
+					<p class="offer__aside-desc-item">Инвестирование: способы, риски, субъекты : монография</p>
+					<p class="offer__aside-desc-item">Майфат А.В.</p>
+					<p class="offer__aside-desc-item">4 450 ₽</p>
+				</div>
+				<div class="offer__aside-actions">
+					<button class="g-button-cart">
+						{% include '/assets/svg/orange-cart.svg' %}
+						В корзину
+					</button>
+					<button class="g-button-tabs">
+						{% include '/assets/svg/tabs.svg' %}
+					</button>
 				</div>
 			</div>
 		</div>
