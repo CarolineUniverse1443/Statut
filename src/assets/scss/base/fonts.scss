@@ -1,17 +1,23 @@
-/*
-Пример подключения
--------------------
+
+// Пример подключения
+// -------------------
 @font-face
 {
 	font-family: 'Roboto-mono';
-	src: url('./fonts/Roboto_mono/Light/RobotoMono-Light.eot');
-	src: url('./fonts/Roboto_mono/Light/RobotoMono-Light.eot?#iefix') format('embedded-opentype'),
-		url('./fonts/Roboto_mono/Light/RobotoMono-Light.woff2') format('woff2'),
-		url('./fonts/Roboto_mono/Light/RobotoMono-Light.woff') format('woff'),
-		url('./fonts/Roboto_mono/Light/RobotoMono-Light.svg#RobotoMono-Light') format('svg'),
-		url('./fonts/Roboto_mono/Light/RobotoMono-Light.ttf') format('truetype');
-	font-weight: 300;
+	src: url('./fonts/Roboto_mono/Light/RobotoMono-Regular.eot');
+	src:url('./fonts/Roboto_mono/Light/RobotoMono-Regular.woff2') format('woff2'),
+		url('./fonts/Roboto_mono/Light/RobotoMono-Regular.woff') format('woff');
+	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
 }
-*/
+
+@font-face
+{
+	font-family: 'Gosha Sans';
+	src: url('./fonts/Gosha_sans/GoshaSans-Regular.eot');
+	src: url('./fonts/Gosha_sans/GoshaSans-Regular.woff2') format('woff2'),
+		 url('./fonts/Gosha_sans/GoshaSans-Regular.woff') format('woff');
+
+	font-weight: 400;
+	font-style: normal;
+}

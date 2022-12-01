@@ -1,0 +1,47 @@
+{% block offer %}
+	<section class="offer">
+		<div class="container">
+			<div class="offer__content">
+				<div class="offer__slider">
+					<div class="offer__slider-arrow">
+						{% include '/assets/svg/arrow-left.svg' %}
+					</div>
+					<div class="offer__slider-text">
+						<div class="offer__slider-text-1">{% include '/assets/svg/2=3.svg' %}</div>
+						<div class="offer__slider-text-2">{% include '/assets/svg/all-books.svg' %}</div>
+					</div>
+					<div class="offer__slider-arrow">
+						{% include '/assets/svg/arrow-right.svg' %}
+					</div>
+					<div class="offer__slider-dots">
+						<div class="offer__slider-dots-wrap">
+							{% include '/assets/svg/slider-active.svg' %}
+							{% include '/assets/svg/slider-inactive.svg' %}
+							{% include '/assets/svg/slider-inactive.svg' %}
+							{% include '/assets/svg/slider-inactive.svg' %}
+						</div>
+					</div>
+				</div>
+				<div class="offer__promotion">
+					<div class="offer__promotion-text">
+						<p> Бесплатно доставим ваш заказ при покупке от 2000 ₽ </p> 
+						<div class="offer__promotion-line">{% include '/assets/svg/orange-line.svg' %}</div>
+					</div>
+					<div class="offer__promotion-svg">
+						{% include '/assets/svg/free-delivery.svg' %}
+					</div>
+				</div>
+
+				<div class="offer__promotion offer__discount">
+					<div class="offer__promotion-text offer__promotion-text--blue">
+						<p>Скидка <br> при регистрации <br> до 15%</p> 
+						<div class="offer__promotion-line offer__promotion-line--cyan">{% include '/assets/svg/cyan-line.svg' %}</div>
+					</div>
+					<div class="offer__promotion-svg">
+						{% include '/assets/svg/discount-reg.svg' %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
