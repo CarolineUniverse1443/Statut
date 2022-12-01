@@ -1,3 +1,74 @@
-<header>
-	<div class="container"> </div>
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<ul class="header__top-list">
+				{% include '/assets/svg/places.svg' %}
+				<li class="header__top-list-item">Москва</li>
+				{% include '/assets/svg/shippings.svg' %}
+				<li class="header__top-list-item">Доставка и оплата</li>
+				{% include '/assets/svg/schedule.svg' %}
+				<li class="header__top-list-item">Адрес и часы работы</li>
+			</ul>
+
+			<ul class="header__top-list">
+				{% include '/assets/svg/communications.svg' %}
+				<li class="header__top-list-unit">market@estatut.ru</li>
+				{% include '/assets/svg/devices.svg' %}
+				<li class="header__top-list-unit">8 (968) 660-65-50</li>
+				{% include '/assets/svg/interface.svg' %}
+			</ul>
+		</div>
+	</div>
+	<hr class="header__line">
+	<div class="container">
+		<div class="header__bottom">
+			<div class="header__bottom-wrap">
+				<img src="img/logo.png" alt="status logo" class="header__bottom-logo">
+				<div class="header__search-form-wrap">
+					<form>
+						<input type="search" placeholder="Автор, название, ISBN" class="header__search-form-input">
+						<button class="g-button--orange header__search-form-btn">
+							{% include '/assets/svg/magnifier.svg' %}
+							{% include '/assets/svg/magnifier-dark.svg' %}
+							<span class="header__search-form-btn-ins">Искать</span>
+						</button>
+					</form>
+
+				</div>
+			</div>
+			
+
+			<ul class="header__bottom-list">
+				{% include '/assets/svg/tabs.svg' %}
+				<li class="header__bottom-list-item">
+					Отложено
+				</li>
+				{% include '/assets/svg/login.svg' %}
+				<li class="header__bottom-list-item">
+					Войти
+				</li>
+				<div class="header__bottom-list-wrap">
+					<div class="header__bottom-list-item-count">10</div>
+					{% include '/assets/svg/shopping.svg' %}
+				</div>
+				<li class="header__bottom-list-item">
+					Корзина
+				</li>
+			</ul>
+
+			
+		</div>		
+		<nav class="header__bottom-menu">
+			<div class="header__bottom-menu-burger">{% include '/assets/svg/catalog.svg' %}</div>
+			<div class="header__bottom-menu-wrap">
+				<a href="#">Каталог</a>
+				<a href="#">Авторы</a>
+				<a href="#">Новинки</a>
+				{% include '/assets/svg/discounts.svg' %}
+				<a href="#">Скидки</a>
+				<a href="#">Партнёрам</a>
+				<a href="#">Мы</a>
+			</div>
+		</nav>
+	</div>
 </header>

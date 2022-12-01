@@ -10,7 +10,8 @@
 
 /* blocks */
 /* Пример подключения*/
-/* @import 'blocks/component/component'; */
+ @import 'blocks/header/header';
+ @import 'blocks/g-button/g-button';
 
 /* pages */
 /* @import 'index'; */
@@ -34,4 +35,8 @@ html
 	font-size: $mainFontSize;
 	color: $mainFontColor;
 	-webkit-font-smoothing: antialiased;
+}
+
+body{
+	background-color: #F9F9FA;
 }
