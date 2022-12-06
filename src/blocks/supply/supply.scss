@@ -63,16 +63,35 @@
 	position: relative;
 	padding-top: 25px;
 	width: 290px;
-	&:nth-of-type(1) {width: 278px;}
+	&:nth-of-type(1) 
+	{
+		width: 278px;
+		.supply__catalog-offer{ left: 20px; }
+		.supply__catalog-card-desc 
+		{ 
+			align-self: flex-start;
+			margin-left: 20px;
+		}
+		.g-button-cart { margin-left: 20px;}
+
+	}
 	border-right: 1px solid rgba(28, 41, 77, 0.15);
-	&:nth-of-type(4) {border-right: none;}
+	&:nth-of-type(4) 
+	{
+		border-right: none;
+		.supply__catalog-card-desc 
+		{ 
+			align-self: flex-start;
+			margin-left: 34px;
+		}
+	}
 }
 
 .supply__catalog-offer
 {
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 35px;
 	font-size: 12px;
 	p
 	{
@@ -97,13 +116,27 @@
 			border-radius: 5px;
 			color: #FF4F52;
 		}
+		&:nth-of-type(3)
+		{
+			width: 70px;
+			background-color: #E2F6EC;;
+			color: #3DC47E;
+		}
+	}
+
+	p.supply__catalog-offer-novelty
+	{
+		width: 70px;
+		background-color: #E2F6EC;
+		color: #3DC47E;
 	}
 }
 
+
 .supply__catalog-card-desc
 {
-	&:nth-of-type(1) {margin-left: 20px;}
-	margin-left: 20px;
+	// margin-left: 10px;
+	width: auto;
 	p
 	{
 		margin: 0;
@@ -136,11 +169,44 @@
 	}
 }
 
+.supply__catalog-card-desc--red
+{
+	font-weight: light;
+	p
+	{
+		&:last-child {font-weight: 400;}
+	}
+	span
+	{
+		margin-right: 7px;
+		&:first-child
+		{
+			color: #FD3A3A;
+			font-weight: 700;
+		}
+		&:nth-child(2)
+		{
+			font-size: 12px;
+			font-weight: 400px;
+			color: rgba(28, 41, 77, 0.5);
+			background-image: linear-gradient(-5deg, transparent 45%, #FD3A3A, transparent 54%);
+  			background-repeat: no-repeat;
+		}
+		&:nth-child(3)
+		{
+			font-size: 12px;
+			font-weight: 400px;
+			color: #0DB98C;
+		}
+	}
+}
+
 .supply__catalog-card-rating
 {
 	display: flex;
 	// background-color:#AC8EE3;
 	width: 100%;
+	padding-left: 0;
 	p
 	{
 		display: flex;
@@ -152,9 +218,9 @@
 		&:nth-of-type(1)
 		{
 			width: 52px;
-			background-color: rgba(251, 192, 45, 0.15);
-			margin-left: 20px;
-			color: #FBC02D;
+			background-color: rgba(255, 163, 77, 0.15);
+			margin-left: 35px;
+			color: #FFA34D;
 			font-weight: 600;
 			svg{margin-right: 4px;}
 		}
@@ -171,6 +237,21 @@
 	}
 }
 
+.supply__catalog-card-rating--yellow
+{
+	padding-left: 20px;
+	p
+	{
+		
+		&:nth-of-type(1)
+		{
+			margin-left: 0;
+			background-color: rgba(251, 192, 45, 0.15);
+			color: #FBC02D;
+		}
+	}
+}
+
 .supply__catalog-actions
 {
 	width: 100%;
@@ -183,7 +264,7 @@
 	width: 146px;
 	border-radius: 5px;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 35px;
 	@media (max-width: 855px) {flex-grow: 1;}
 	// margin-bottom: 26px;
 	border: 1px solid #EEEEEE;
