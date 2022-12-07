@@ -1,0 +1,58 @@
+.container--padding
+{
+	@media (max-width: 768px) { padding: 0 10px;}
+}
+
+.benefit__wrap
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	gap: 30px;
+}
+
+.benefit__card
+{
+	max-width: 263px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+	position: relative;
+	// img 
+	// {
+	// 	position: absolute;
+	// 	top: 39px;
+	// }
+}
+
+.benefit__card-img
+{
+	position: absolute;
+	height: 100%;
+	// background-color: rgb(47, 86, 183);
+	display: flex;
+	align-items: center;
+}
+
+.benefit__card-text
+{
+	margin-left: 90px;
+	// background-color: rgb(67, 91, 186);
+	padding: 42px 0;
+	h2
+	{
+		margin: 0;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	p
+	{
+		max-width: 153px;
+		width: 100%;
+		margin: 0;
+		font-size: 12px;
+		color: #727272;
+	}
+}
