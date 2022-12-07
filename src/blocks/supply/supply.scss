@@ -1,3 +1,8 @@
+.container--padding
+{
+	@media (max-width: 768px) { padding: 0 10px;}
+}
+
 .supply__wrap
 {
 	margin-top: 30px;
@@ -53,6 +58,8 @@
 .supply__catalog 
 {
 	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1230px) {justify-content: center;}
 }
 
 .supply__catalog-card
@@ -62,18 +69,41 @@
 	align-items: center;
 	position: relative;
 	padding-top: 25px;
-	width: 290px;
+	max-width: 290px;
+	width: 100%;
+
+	.supply__catalog-photo
+	{
+		width: 100%;
+		max-height: 200px;
+		img
+		{
+			width: 100%;
+			height: 100%;
+			object-fit:	contain;
+		}
+	}
+	
 	&:nth-of-type(1) 
 	{
-		width: 278px;
+		max-width: 278px;
+		width: 100%;
+		
 		.supply__catalog-offer{ left: 20px; }
 		.supply__catalog-card-desc 
 		{ 
 			align-self: flex-start;
 			margin-left: 20px;
+			max-width: 205px;
 		}
 		.g-button-cart { margin-left: 20px;}
-
+		@media (max-width: 768px) 
+		{ 
+			max-width: 290px;
+			.supply__catalog-card-desc { margin: 0 10px;}
+			.g-button-cart { margin-left: 10px;}
+			.supply__catalog-offer{ left: 10px; }
+		}
 	}
 	border-right: 1px solid rgba(28, 41, 77, 0.15);
 	&:nth-of-type(4) 
@@ -83,6 +113,31 @@
 		{ 
 			align-self: flex-start;
 			margin-left: 34px;
+		}
+	}
+	@media (max-width: 1230px) 
+	{
+		&:nth-of-type(3) {display: none;}
+	}
+	@media (max-width: 905px) 
+	{
+		&:nth-of-type(2) {display: none;}
+	}
+	@media (max-width: 768px) 
+	{
+		.supply__catalog-card-rating
+		{
+			display: block;
+			width: auto;
+			align-self: flex-start;
+		}
+		.supply__catalog-photo {max-height: 180px;}
+		&:nth-of-type(4) 
+		{
+			.supply__catalog-card-desc 
+			{ 
+				margin: 0 10px;
+			}
 		}
 	}
 }
@@ -116,12 +171,6 @@
 			border-radius: 5px;
 			color: #FF4F52;
 		}
-		&:nth-of-type(3)
-		{
-			width: 70px;
-			background-color: #E2F6EC;;
-			color: #3DC47E;
-		}
 	}
 
 	p.supply__catalog-offer-novelty
@@ -130,6 +179,7 @@
 		background-color: #E2F6EC;
 		color: #3DC47E;
 	}
+	@media (max-width: 768px) { left: 10px;}
 }
 
 
@@ -141,6 +191,12 @@
 	{
 		margin: 0;
 		margin-bottom: 8px;
+		max-width: 223px;
+		// width: 100%;
+		white-space: wrap;
+		// white-space: nowrap;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
 		&:first-child
 		{
 			font-size: 12px;
@@ -153,6 +209,8 @@
 			font-weight: bold;
 			color: rgba(28, 41, 77, 1);
 			line-height: 19px;
+			white-space: wrap;
+			text-overflow: ellipsis;
 		}
 		&:nth-child(3)
 		{
@@ -235,6 +293,17 @@
 			svg{margin-right: 6px;}
 		}
 	}
+	@media (max-width: 768px) 
+	{
+		p
+		{
+			margin-left: 10px;
+			&:nth-of-type(1)
+			{
+				margin-left: 10px;
+			}
+		}
+	}
 }
 
 .supply__catalog-card-rating--yellow
@@ -250,28 +319,59 @@
 			color: #FBC02D;
 		}
 	}
+	@media (max-width: 768px) 
+	{
+		padding-left: 0;
+		margin-left: 10px;
+		p
+		{
+			margin-left: 0;
+			&:nth-of-type(1) {margin-left: 0px;}
+			&:nth-of-type(2) { margin-left: 0px;}
+		}
+	}
 }
 
 .supply__catalog-actions
 {
 	width: 100%;
 	display: flex;
+	font-size: 14px;
 	margin-bottom: 15px;	
+	.g-button-cart 
+	{
+		max-width: 146px;
+		width: 100%;
+	}
+	@media (max-width: 768px)
+	{
+		justify-content: center;
+		.g-button-cart 
+		{
+			margin-left: 10px;
+			svg {margin-right: 7px;}
+			height: 35px;
+		}
+	}
 }
 
 .g-button-cart
 {
-	width: 146px;
+	// margin-left: 35px;
 	border-radius: 5px;
 	height: 40px;
-	margin-left: 35px;
-	@media (max-width: 855px) {flex-grow: 1;}
-	// margin-bottom: 26px;
 	border: 1px solid #EEEEEE;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	svg {margin-right: 12px;}
+	@media (max-width: 855px) {flex-grow: 1;}
+	// @media (max-width: 768px) 
+	// {
+	// 	margin-left: 10px;
+	// 	svg {margin-right: 7px;}
+	// 	height: 35px;
+	// }
 }
 
 .g-button-tabs
@@ -280,11 +380,18 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 5px;
+	// max-width: 40px;
 	width: 40px;
 	height: 40px;
+	// width: 100%;
 	margin-left: 10px;
-	// margin-bottom: 26px;
 	border: 1px solid #EEEEEE;
+	@media (max-width: 768px) 
+	{
+		margin-right: 10px;
+		min-width: 35px;
+		height: 35px;
+	}
 }
 
 .supply__show
