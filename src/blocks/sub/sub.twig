@@ -1,0 +1,19 @@
+{% block sub %}
+	<section class="sub">
+		<div class="container container--padding">
+			<div class="sub__wrap">
+				<form>
+					<div class="sub__form-discount"> 
+						<p>Скидка <span>200 ₽</span> при подписке на рассылку Издательства</p>
+						<div class="sub__form-discount-line"> 
+							{% include '/assets/svg/orange-short-line.svg' %}
+						</div> 
+					</div>
+
+					<input type="email" placeholder="Введите ваш Email" class="sub__form-input">
+					<button class="g-button g-button-sub">Подписаться</button>
+				</form>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,95 @@
+.container--padding
+{
+	@media (max-width: 768px) { padding: 0 10px;}
+}
+
+.sub__wrap
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: rgb(2, 136, 209);
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	form
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 32px 0;
+		@media (max-width: 768px) 
+		{
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: left;
+			padding: 20px 10px;
+			gap: 10px;
+		}
+	}
+}
+
+.sub__form-discount
+{
+	
+	font-size: 18px;
+	font-weight: 500;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 14px;
+	p 
+	{
+		position: relative;
+		color: #fff;
+		margin: 0;
+		z-index: 3;
+		span {font-weight: 700;}
+		@media (max-width: 400px) {max-width: 250px;}
+	}
+	@media (max-width: 768px)
+	{
+		margin: 0;
+	}
+}
+
+.sub__form-discount-line
+{
+	position: absolute;
+	top: 0;
+	left: 55px;
+	z-index: 0;
+}
+
+.sub__form-input
+{
+	max-width: 418px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	text-indent: 15px;
+	margin-right: 10px;
+	&::placeholder{ color: rgba(28, 41, 77, 0.5);}
+	@media (max-width: 768px)
+	{
+		max-width: 100%;
+		margin-right: 0;
+	}
+}
+
+.g-button-sub
+{
+	max-width: 137px;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	margin-right: 10px;
+	&:hover{background-color: rgb(42, 100, 161);}
+	@media (max-width: 768px)
+	{
+		margin: 0;
+		max-width: 100%;
+		// margin-top: 10px;
+	}
+}

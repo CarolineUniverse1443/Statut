@@ -148,9 +148,7 @@
 	border-radius: 5px;
 	border: 1px solid #DFE0E1;
 	text-indent: 15px;
-	&::placeholder{
-		color: rgba(28, 41, 77, 0.5);
-	}
+	&::placeholder{ color: rgba(28, 41, 77, 0.5);}
 
 	@media (max-width: 800px) 
 	{
