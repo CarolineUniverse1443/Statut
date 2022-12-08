@@ -6,10 +6,11 @@
 .supply__wrap
 {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 	background: #FFFFFF;
 	border-radius: 5px;
 	font-family: 'Roboto', sans-serif;
+	@media (max-width: 768px) { margin-top: 10px;}
 }
 
 .supply__heading
