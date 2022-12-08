@@ -1,0 +1,48 @@
+{% block news %}
+	<section class="news">
+		<div class="container container--padding">
+			<div class="news__wrap">
+				<div class="news__heading">
+					<h2>Новости</h2>
+					<div class="news__heading-switch">
+						<button class="news__heading-switch-btn">
+							{% include '/assets/svg/chevron-left.svg' %}
+						</button>
+						<button class="news__heading-switch-btn">
+							{% include '/assets/svg/chevron-right.svg' %}
+						</button>
+					</div>
+				</div>
+				<div class="news__list">
+					<div class="news__list-card">
+						<img src="img/library.png" alt="library">
+						<div class="news__list-card-desc">
+							<p>16 июня 2020</p>
+							<p>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</p>
+							<p>18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+						</div>
+						<button class="g-button g-button-news">Читать</button>
+					</div>
+					<div class="news__list-card">
+						<img src="img/pantheon.png" alt="pantheon">
+						<div class="news__list-card-desc">
+							<p>16 июня 2020</p>
+							<p>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</p>
+							<p>18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+						</div>
+						<button class="g-button g-button-news">Читать</button>
+					</div>
+					<div class="news__list-card">
+						<img src="img/themis.png" alt="themis">
+						<div class="news__list-card-desc">
+							<p>16 июня 2020</p>
+							<p>Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...</p>
+							<p>18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</p>
+						</div>
+						<button class="g-button g-button-news">Читать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

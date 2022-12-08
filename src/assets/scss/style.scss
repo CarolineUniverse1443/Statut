@@ -17,7 +17,7 @@
  @import 'blocks/sub/sub';
  @import 'blocks/release/release';
  @import 'blocks/benefit/benefit';
-
+ @import 'blocks/news/news';
 
 /* pages */
 /* @import 'index'; */
@@ -43,6 +43,4 @@ html
 	-webkit-font-smoothing: antialiased;
 }
 
-body{
-	background-color: #F9F9FA;
-}
+body { background-color: #F9F9FA; }
