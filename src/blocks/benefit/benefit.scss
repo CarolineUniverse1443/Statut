@@ -11,6 +11,12 @@
 	// display: grid;
 	// grid-template: "block1 block2 block3 block4";
 	gap: 30px;
+	@media (max-width: 1130px) 
+	{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
 	@media (max-width: 768px) 
 	{
 		flex-direction: column;
