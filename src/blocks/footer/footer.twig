@@ -13,12 +13,12 @@
 		</div>
 		<hr class="footer__line">
 		<div class="container container--padding">
-			
 			<div class="footer__top">
 				<img src="img/logo.png" alt="status logo" class="footer__top-logo">
 				<div class="footer__top-wrap">
 					<form>
 						<input type="search" placeholder="Введите свой Email и получите скидку" class="footer__top-wrap-input">
+						<input type="search" placeholder="Подписаться на рассылку" class="footer__top-wrap-input">
 						<button class="g-button--orange footer__top-wrap-btn">
 							{% include '/assets/svg/telegram.svg' %}
 						</button>
@@ -28,6 +28,65 @@
 					{% include '/assets/svg/facebook.svg' %}
 					{% include '/assets/svg/instagram.svg' %}
 					{% include '/assets/svg/twitter.svg' %}
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container container--padding">
+				<div class="footer__bottom">
+					<div class="footer__bottom-links">
+						<div class="footer__bottom-links-column">
+							<h2>Покупателям</h2>
+							<p>Наша почта</p>
+							<p>Оплата и доставка</p>
+							<p>Вопросы и ответы</p>
+						</div>
+						<div class="footer__bottom-links-column">
+							<h2>Издательство</h2>
+							<p>О компании</p>
+							<p>Авторам</p>
+							<p>Вакансии</p>
+							<p>Контакты</p>
+						</div>
+						<div class="footer__bottom-links-column">
+							<h2>Книги</h2>
+							<p>Все категории</p>
+							<p>Бестселлеры</p>
+							<p>Новинки</p>
+							<p>Скидки и акции</p>
+						</div>
+						<div class="footer__bottom-links-column">
+							<h2>Прайс-лист</h2>
+							<div class="footer__bottom-links-wrap">
+								{% include '/assets/svg/file.svg' %}
+								<p>
+									<span>Скачать прайс-лист</span>
+									<span>PDF, 12 Mb</span>
+								</p>
+								
+							</div>
+						</div>
+						<div class="footer__bottom-links-column">
+							<h2>Телефон и Email</h2>
+							<p>
+								{% include '/assets/svg/communications.svg' %}
+								<span>market@estatut.ru</span>
+							</p>
+							<p>
+								{% include '/assets/svg/devices.svg' %}
+								<span>8 (968) 660-65-50</span>
+							</p>
+						</div>
+					</div>
+					<hr class="footer__line footer__line-bottom">
+					<div class="footer__bottom-privacy">
+						<p>© 2020 Издательство «Статут»</p>
+						<div class="footer__bottom-privacy-wrap">
+							<p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+							<p>Политика конфиденциальности</p>
+							<p>Договор оферты</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -7,6 +7,7 @@
 {
     margin-top: 30px;
     background: rgba(40, 47, 54, 0.04);
+	color: #1C294D;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,7 +35,13 @@
 	// color: #DFE0E1;
 	background-color: rgba(28, 41, 77, 0.15);
 	height: 2px;
-	// @media (max-width: 768px) {display: none;}
+    display: none;
+	@media (max-width: 768px) {display: block;}
+}
+
+.footer__line-bottom
+{
+	display: block;
 }
 
 .footer__top
@@ -87,16 +94,12 @@
     background-color: #fff;
 	text-indent: 15px;
 	&::placeholder{ color: rgba(28, 41, 77, 0.5);}
-
-	// @media (max-width: 800px) 
-	// {
-	// 	// width: auto;
-		
-	// 	border: none;
-	// 	background-color: #F7F7F7;
-	// 	border-radius: 5px;
-	// 	text-indent: 15px;
-	// }
+	&:nth-of-type(2) {display: none;}
+	@media (max-width: 768px) 
+	{
+		&:nth-of-type(1) {display: none;}
+		&:nth-of-type(2) {display: block;}
+	}
 }
 
 .footer__top-wrap-btn
@@ -119,4 +122,102 @@
     justify-content: space-between;
     gap: 15px;
     @media (max-width: 768px) {display: none;}
+}
+
+.footer__bottom-wrap
+{
+	background-color: #fff;
+}
+
+.footer__bottom-links
+{
+	display: flex;
+	padding: 45px 0;
+}
+
+.footer__bottom-links-column
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 165px;
+	width: 100%;
+	&:nth-of-type(4) {max-width: 170px;}
+	&:last-child 
+	{
+		svg {margin-right: 9px;}
+		p 
+		{
+			display: flex;
+			align-items: center;
+		}
+	}
+	margin-right: 30px;
+	h2
+	{
+		font-weight: 600;
+		font-size: 14px;
+		margin-bottom: 24px;
+	}
+	p
+	{
+		margin: 0;
+		&:not(:last-child) {margin-bottom: 15px;}
+		font-size: 14px;
+		color: rgba(40, 47, 54, 0.8);
+		// border-top: 1px solid #1C294D;
+	}
+}
+
+.footer__bottom-links-wrap
+{
+	display: flex;
+	svg{margin-top: 2px;}
+	p {margin-left: 5px;}
+	span
+	{
+		display: block;
+		// background-color:antiquewhite;
+		&:nth-of-type(1) 
+		{
+			margin-bottom: 0;
+			line-height: 20px;
+		}
+		&:nth-of-type(2) 
+		{
+			font-size: 12px;
+			line-height: 15px;
+			color: rgba(40, 47, 54, 0.5);
+		}
+	}
+}
+
+.footer__bottom-privacy
+{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 45px;
+	p
+	{
+		margin: 0;
+		font-size: 14px;
+		color: rgba(40, 47, 54, 0.8);
+		&:first-child {color: rgba(40, 47, 54, 0.5);}
+		// border-top: 1px solid #1C294D;
+	}
+}
+
+.footer__bottom-privacy-wrap 
+{
+	display: flex;
+	color: rgba(40, 47, 54, 0.8);
+	p
+	{
+		&:first-child 
+		{
+			color: rgba(40, 47, 54, 0.8);
+			margin-right: 67px;
+		}
+		&:nth-of-type(2) {margin-right: 30px;}
+	}
 }
