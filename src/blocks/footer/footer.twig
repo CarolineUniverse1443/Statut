@@ -36,46 +36,69 @@
 				<div class="footer__bottom">
 					<div class="footer__bottom-links">
 						<div class="footer__bottom-links-column">
-							<h2>Покупателям</h2>
+							<div class="footer__bottom-links-heading">
+								<h2>Покупателям</h2>
+								{% include '/assets/svg/arrow-down.svg' %}
+							</div>
+							<div class="footer__bottom-links-wrap">
 							<p>Наша почта</p>
 							<p>Оплата и доставка</p>
 							<p>Вопросы и ответы</p>
+							</div>
 						</div>
 						<div class="footer__bottom-links-column">
-							<h2>Издательство</h2>
-							<p>О компании</p>
-							<p>Авторам</p>
-							<p>Вакансии</p>
-							<p>Контакты</p>
-						</div>
-						<div class="footer__bottom-links-column">
-							<h2>Книги</h2>
-							<p>Все категории</p>
-							<p>Бестселлеры</p>
-							<p>Новинки</p>
-							<p>Скидки и акции</p>
-						</div>
-						<div class="footer__bottom-links-column">
-							<h2>Прайс-лист</h2>
+							<div class="footer__bottom-links-heading">
+								<h2>Издательство</h2>
+								{% include '/assets/svg/arrow-down.svg' %}
+							</div>
 							<div class="footer__bottom-links-wrap">
+								<p>О компании</p>
+								<p>Авторам</p>
+								<p>Вакансии</p>
+								<p>Контакты</p>
+							</div>
+						</div>
+						<div class="footer__bottom-links-column">
+							<div class="footer__bottom-links-heading">
+								<h2>Книги</h2>
+								{% include '/assets/svg/arrow-down.svg' %}
+							</div>
+							<div class="footer__bottom-links-wrap">
+								<p>Все категории</p>
+								<p>Бестселлеры</p>
+								<p>Новинки</p>
+								<p>Скидки и акции</p>
+							</div>
+						</div>
+						<div class="footer__bottom-links-column">
+							<div class="footer__bottom-links-heading">
+								<h2>Прайс-лист</h2>
+								{% include '/assets/svg/arrow-down.svg' %}
+							</div>
+							<div class="footer__bottom-links-wrap footer__bottom-links-wrap--flex">
 								{% include '/assets/svg/file.svg' %}
 								<p>
 									<span>Скачать прайс-лист</span>
 									<span>PDF, 12 Mb</span>
 								</p>
-								
 							</div>
 						</div>
 						<div class="footer__bottom-links-column">
-							<h2>Телефон и Email</h2>
-							<p>
-								{% include '/assets/svg/communications.svg' %}
-								<span>market@estatut.ru</span>
-							</p>
-							<p>
-								{% include '/assets/svg/devices.svg' %}
-								<span>8 (968) 660-65-50</span>
-							</p>
+							<div class="footer__bottom-links-heading">
+								<h2>Телефон и Email</h2>
+
+							</div>
+							<div class="footer__bottom-links-wrap">
+								<p>
+									{% include '/assets/svg/communications.svg' %}
+									<span>market@estatut.ru</span>
+								</p>
+								<p>
+									{% include '/assets/svg/devices.svg' %}
+									<span>8 (968) 660-65-50</span>
+									{# {% include '/assets/svg/interface.svg' %} #}
+								</p>
+							</div>
 						</div>
 					</div>
 					<hr class="footer__line footer__line-bottom">
@@ -89,6 +112,39 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<hr class="footer__line footer__line-contacts">
+		<div class="footer__contacts">
+			<div class="footer__contacts-wrap">
+				<p>Политика конфиденциальности</p>
+				<p>Договор оферты</p>
+			</div>
+		</div>
+		<hr class="footer__line footer__line-contacts">
+		<div class="footer__contacts">
+			<p>
+				{% include '/assets/svg/devices.svg' %}
+				<span>8 (968) 660-65-50</span>
+				{% include '/assets/svg/interface.svg' %}
+			</p>
+		</div>
+		<hr class="footer__line footer__line-contacts">
+		<div class="footer__contacts">
+			<p>
+				{% include '/assets/svg/communications.svg' %}
+				<span>market@estatut.ru</span>
+			</p>
+		</div>
+		<hr class="footer__line footer__line-contacts">
+		<div class="footer__contacts">
+			<p>
+				{% include '/assets/svg/places.svg' %}
+				<p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+			</p>
+		</div>
+		<hr class="footer__line footer__line-contacts">
+		<div class="footer__contacts">
+			<p>© 2020 Издательство «Статут»</p>
 		</div>
 	</footer>
 {% endblock %}
