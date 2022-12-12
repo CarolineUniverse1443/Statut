@@ -170,10 +170,12 @@
 	@media (max-width: 768px) 
 	{ 
 		max-width: 100%; 
+		border-bottom: 1px solid rgba(42, 61, 72, 0.15);
 		&:nth-of-type(4) 
 		{
 			max-width: 100%;
 			.footer__bottom-links-heading {border-bottom: none;}
+			border-bottom: none;
 		}
 		&:nth-of-type(5) {display: none;}
 	}
@@ -196,10 +198,13 @@
 	@media (max-width: 768px) 
 	{
 		// &:nth-of-type(5) {display: none;}
-		svg{display: block;}
+		svg
+		{
+			display: block;
+			// &:active {transform: scale(1, -1);}
+		}
 		margin: 0;
 		padding: 20px 0;
-		border-bottom: 1px solid rgba(42, 61, 72, 0.15);
 	}
 
 }
@@ -208,7 +213,11 @@
 {
 	display: flex;
 	flex-direction: column;
-	@media (max-width: 768px) {display: none;}
+	@media (max-width: 768px) 
+	{
+		display: none;
+		padding-bottom: 15px;
+	}
 }
 
 .footer__bottom-links-wrap--flex
